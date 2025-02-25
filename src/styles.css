@@ -123,3 +123,65 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+
+
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.home-text {
+  background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semi-transparente */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.home-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.home-text h2 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.home-arrow {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.home-arrow img {
+  height: 3rem;
+  width: 3rem;
+  animation: bounce 2s infinite;
+}
+
+/* Animación del icono de flecha */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
