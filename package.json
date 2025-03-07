@@ -3,22 +3,22 @@
   "version": "1.0.0",
   "description": "Educator JS Codespace Template",
   "source": "src/index.html",
-  "homepage": "http://LuisNol.github.io/sumarandevs",
+  "homepage": "http://nluis.it.blog.admincursos-udemy.site",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://LuisNol.github.io/sumarandevs'",
+    "build-gh": "parcel build --public-url 'https://nluis.it.blog.admincursos-udemy.site'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microsoft/codespaces-teaching-template-js.git"
+    "url": "git+https://github.com/LuisNol/sumarandevs.git"
   },
   "author": "Microsoft",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/microsoft/codespaces-teaching-template-js/issues"
+    "url": "https://github.com/LuisNol/sumarandevs/issues"
   },
   "dependencies": {
     "react": "^18.2.0",
