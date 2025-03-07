@@ -27205,7 +27205,7 @@ var _motionBackgroundJpgDefault = parcelHelpers.interopDefault(_motionBackground
 const imageAltText = "purple and blue abstract background";
 /**
  * Sort description that expands on your title on the Home component.
- */ const description = "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+ */ const description = "I am a student of Computer and Systems Engineering at the National Agrarian University of La Selva. Focused on Software Development | Cloud and DevOps ☁️ \uD83D\uDD27 Optimization of systems and networks \uD83D\uDCCA Innovation in data and technology \uD83D\uDCA1 Teamwork | Continuous learning";
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
