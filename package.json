@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LuisNol/sumarandevs.git"
+    "url": "git+https://github.com/microsoft/codespaces-teaching-template-js.git"
   },
   "author": "Microsoft",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LuisNol/sumarandevs/issues"
+    "url": "https://github.com/microsoft/codespaces-teaching-template-js/issues"
   },
   "dependencies": {
     "react": "^18.2.0",
