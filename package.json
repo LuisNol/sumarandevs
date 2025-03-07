@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Educator JS Codespace Template",
   "source": "src/index.html",
-  "homepage": "http://nluis.it.blog.admincursos-udemy.site",
+  "homepage": "https://nluis.it.blog.admincursos-udemy.site",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
