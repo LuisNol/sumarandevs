@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Educator JS Codespace Template",
   "source": "src/index.html",
-  "homepage": "https://nluis.it.blog.admincursos-udemy.site",
+  "homepage": "http://LuisNol.github.io/sumarandevs",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://nluis.it.blog.admincursos-udemy.site/sumarandevs'",
+    "build-gh": "parcel build --public-url 'https://LuisNol.github.io/sumarandevs'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
