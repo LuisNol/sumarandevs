@@ -33,6 +33,7 @@ const siteProps = {
   medium: "",
   twitter: "luis.sumaran.30",
   youTube: "nolbertoluissumaranpimente2506",
+  TikTok: "luis.sumaran.30",
 };
 
 const primaryColor = "#4E567E";
