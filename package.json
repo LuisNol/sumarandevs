@@ -6,8 +6,9 @@
   "homepage": "http://LuisNol.github.io/sumarandevs",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build",
+    "build": "parcel build --public-url '/'",
     "build-gh": "parcel build --public-url 'https://LuisNol.github.io/sumarandevs'",
+    "build-azure": "parcel build --public-url 'https://polite-bay-074f2a01e.6.azurestaticapps.net'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
