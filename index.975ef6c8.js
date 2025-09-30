@@ -27092,6 +27092,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _about = require("./Components/About");
 var _aboutDefault = parcelHelpers.interopDefault(_about);
+var _blog = require("./Components/Blog");
+var _blogDefault = parcelHelpers.interopDefault(_blog);
 var _footer = require("./Components/Footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _header = require("./Components/Header");
@@ -27110,15 +27112,16 @@ var _stylesCss = require("./styles.css");
  *
  * If you don't have one of the social sites listed, leave it as an empty string.
  */ const siteProps = {
-    name: "Nolberto Luis Sumaran Pimentel ",
-    title: "Web Designer & Content Creator",
+    name: "Nolberto Luis Sumaran Pimentel",
+    title: "Full Stack Developer | Cloud & DevOps Engineer",
     email: "nolberto.sumaran@gmail.com",
+    whatsapp: "51940078299",
+    telegram: "LuisNol",
     gitHub: "LuisNol",
-    instagram: "luis.sumaran.30",
     linkedIn: "nolberto-luis-sumaran-pimentel-65419a221",
-    medium: "",
-    twitter: "luis.sumaran.30",
-    youTube: "nolbertoluissumaranpimente2506"
+    tiktok: "luisnol30",
+    youTube: "nolbertoluissumaranpimente2506",
+    facebook: "luis.nol.sumaran"
 };
 const primaryColor = "#4E567E";
 const secondaryColor = "#D2F1E4";
@@ -27128,7 +27131,7 @@ const App = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 44,
+                lineNumber: 46,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {
@@ -27136,17 +27139,22 @@ const App = ()=>{
                 title: siteProps.title
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 45,
+                lineNumber: 47,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 46,
+                lineNumber: 48,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 47,
+                lineNumber: 49,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _blogDefault.default), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 50,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {
@@ -27155,13 +27163,13 @@ const App = ()=>{
                 secondaryColor: secondaryColor
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 48,
+                lineNumber: 51,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 43,
+        lineNumber: 45,
         columnNumber: 5
     }, undefined);
 };
@@ -27175,7 +27183,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kouZu":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/About":"kouZu","./Components/Blog":"cCIoR","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kouZu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$17a8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27204,24 +27212,27 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _motionBackgroundJpgDefault = parcelHelpers.interopDefault(_motionBackgroundJpg);
 const imageAltText = "purple and blue abstract background";
 /**
- * Sort description that expands on your title on the Home component.
- */ const description = "I am a student of Computer and Systems Engineering at the National Agrarian University of La Selva. Focused on Software Development | Cloud and DevOps ☁️ \uD83D\uDD27 Optimization of systems and networks \uD83D\uDCCA Innovation in data and technology \uD83D\uDCA1 Teamwork | Continuous learning";
+ * Professional description that expands on your title on the Home component.
+ */ const description = "Desarrollador Full Stack especializado en tecnolog\xedas modernas con experiencia en desarrollo web, Cloud Computing y DevOps. Estudiante de Ingenier\xeda de Sistemas e Inform\xe1tica en la Universidad Nacional Agraria de La Selva. Apasionado por la innovaci\xf3n tecnol\xf3gica y el aprendizaje continuo.";
 /**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
+ * Lista de tecnologías y habilidades técnicas basadas en tu experiencia real
  */ const skillsList = [
-    "Web design",
-    "User experience",
-    "Inclusive design",
-    "Focus group testing",
-    "Mobile user interfaces",
-    "Graphic design", 
+    "Laravel & PHP",
+    "Angular & TypeScript",
+    "React & Vue.js",
+    "Node.js & Express",
+    "MySQL & SQLite",
+    "Docker & DevOps",
+    "AWS & Cloud Computing",
+    "Git & GitHub",
+    "JavaScript & ES6+",
+    "HTML5 & CSS3",
+    "RESTful APIs",
+    "Microservicios", 
 ];
 /**
- * Use this to give more information about what you are passionate about,
- * how you best work, or even a quote. This will help someone learn more
- * about you on a professional level.
- */ const detailOrQuote = "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+ * Información adicional sobre tu enfoque profesional y pasiones
+ */ const detailOrQuote = "Me apasiona resolver problemas complejos utilizando las mejores pr\xe1cticas de desarrollo y arquitecturas escalables. Especializado en crear aplicaciones full-stack robustas, optimizaci\xf3n de sistemas y automatizaci\xf3n de procesos. Siempre busco aprender nuevas tecnolog\xedas y compartir conocimiento a trav\xe9s de contenido educativo en YouTube.";
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "padding",
@@ -27233,7 +27244,7 @@ const About = ()=>{
                 alt: imageAltText
             }, void 0, false, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 53,
+                lineNumber: 56,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27246,10 +27257,10 @@ const About = ()=>{
                 },
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        children: "About Myself"
+                        children: "Sobre M\xed"
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 63,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27257,12 +27268,12 @@ const About = ()=>{
                         children: description
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 64,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 65,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27277,17 +27288,17 @@ const About = ()=>{
                                 children: skill
                             }, skill, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 76,
+                                lineNumber: 79,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 66,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 79,
+                        lineNumber: 82,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27297,19 +27308,19 @@ const About = ()=>{
                         children: detailOrQuote
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 80,
+                        lineNumber: 83,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 54,
+                lineNumber: 57,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/About.jsx",
-        lineNumber: 52,
+        lineNumber: 55,
         columnNumber: 5
     }, undefined);
 };
@@ -27510,7 +27521,284 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}],"7GWgX":[function(require,module,exports) {
+},{"react-refresh/runtime":"786KC"}],"cCIoR":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bbe0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bbe0.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+/**
+ * Blog component
+ *
+ * Sección informativa que muestra artículos y contenido técnico
+ * basado en la experiencia del desarrollador
+ */ var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+/**
+ * Lista de artículos y contenido técnico
+ */ const blogPosts = [
+    {
+        title: "AvisOnline: Plataforma de Avisos Clasificados \uD83D\uDE80",
+        description: "Desarrollo completo de una plataforma web para avisos clasificados con sistema de categor\xedas, b\xfasqueda avanzada, panel de administraci\xf3n y gesti\xf3n de usuarios. Tecnolog\xedas: Angular (Frontend), Laravel + PHP (Backend), MySQL (Base de Datos).",
+        category: "Proyecto Destacado",
+        readTime: "15 min",
+        date: "2024",
+        url: "https://www.avisonline.store/"
+    },
+    {
+        title: "Desarrollo Full Stack con Laravel y Angular",
+        description: "Gu\xeda completa para crear aplicaciones web modernas utilizando Angular en el frontend y Laravel + PHP en el backend.",
+        category: "Desarrollo Web",
+        readTime: "12 min",
+        date: "2024",
+        url: "#"
+    },
+    {
+        title: "Optimizaci\xf3n de APIs RESTful con Laravel",
+        description: "Mejores pr\xe1cticas para crear APIs eficientes y escalables utilizando el framework Laravel de PHP.",
+        category: "Backend",
+        readTime: "10 min",
+        date: "2024",
+        url: "#"
+    }
+];
+const Blog = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "padding",
+        id: "blog",
+        style: {
+            backgroundColor: "#f8f9fa"
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                style: {
+                    textAlign: "center",
+                    marginBottom: "3rem"
+                },
+                children: "Blog T\xe9cnico"
+            }, void 0, false, {
+                fileName: "src/Components/Blog.jsx",
+                lineNumber: 43,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    display: "grid",
+                    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+                    gap: "1.5rem",
+                    maxWidth: "1000px",
+                    margin: "0 auto",
+                    padding: "0 1rem"
+                },
+                children: blogPosts.map((post, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                        style: {
+                            backgroundColor: post.category === "Proyecto Destacado" ? "#f8f9ff" : "white",
+                            borderRadius: "12px",
+                            padding: "2rem",
+                            boxShadow: post.category === "Proyecto Destacado" ? "0 8px 25px rgba(78, 86, 126, 0.15)" : "0 4px 6px rgba(0, 0, 0, 0.1)",
+                            transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                            cursor: "pointer",
+                            border: post.category === "Proyecto Destacado" ? "2px solid #4E567E" : "none"
+                        },
+                        onMouseEnter: (e)=>{
+                            e.target.style.transform = "translateY(-5px)";
+                            e.target.style.boxShadow = "0 8px 25px rgba(0, 0, 0, 0.15)";
+                        },
+                        onMouseLeave: (e)=>{
+                            e.target.style.transform = "translateY(0)";
+                            e.target.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    alignItems: "center",
+                                    marginBottom: "1rem"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        style: {
+                                            backgroundColor: post.category === "Proyecto Destacado" ? "#ff6b35" : "#4E567E",
+                                            color: "white",
+                                            padding: "0.25rem 0.75rem",
+                                            borderRadius: "20px",
+                                            fontSize: "0.875rem",
+                                            fontWeight: "500"
+                                        },
+                                        children: post.category
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Blog.jsx",
+                                        lineNumber: 79,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        style: {
+                                            color: "#666",
+                                            fontSize: "0.875rem"
+                                        },
+                                        children: post.readTime
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Blog.jsx",
+                                        lineNumber: 89,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Blog.jsx",
+                                lineNumber: 73,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                style: {
+                                    marginBottom: "1rem",
+                                    color: "#333",
+                                    fontSize: "1.25rem",
+                                    lineHeight: "1.4"
+                                },
+                                children: post.title
+                            }, void 0, false, {
+                                fileName: "src/Components/Blog.jsx",
+                                lineNumber: 97,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    color: "#666",
+                                    lineHeight: "1.6",
+                                    marginBottom: "1.5rem"
+                                },
+                                children: post.description
+                            }, void 0, false, {
+                                fileName: "src/Components/Blog.jsx",
+                                lineNumber: 106,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    alignItems: "center"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        style: {
+                                            color: "#999",
+                                            fontSize: "0.875rem"
+                                        },
+                                        children: post.date
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Blog.jsx",
+                                        lineNumber: 119,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: post.url,
+                                        style: {
+                                            color: "#4E567E",
+                                            textDecoration: "none",
+                                            fontWeight: "500",
+                                            fontSize: "0.875rem"
+                                        },
+                                        onMouseEnter: (e)=>{
+                                            e.target.style.textDecoration = "underline";
+                                        },
+                                        onMouseLeave: (e)=>{
+                                            e.target.style.textDecoration = "none";
+                                        },
+                                        children: "Leer m\xe1s →"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Blog.jsx",
+                                        lineNumber: 125,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Blog.jsx",
+                                lineNumber: 114,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, index, true, {
+                        fileName: "src/Components/Blog.jsx",
+                        lineNumber: 53,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/Components/Blog.jsx",
+                lineNumber: 44,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    textAlign: "center",
+                    marginTop: "3rem"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            color: "#666",
+                            fontSize: "1rem",
+                            marginBottom: "1rem"
+                        },
+                        children: "\xbfInteresado en colaborar o tienes alguna pregunta t\xe9cnica?"
+                    }, void 0, false, {
+                        fileName: "src/Components/Blog.jsx",
+                        lineNumber: 151,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "mailto:nolberto.sumaran@gmail.com",
+                        style: {
+                            backgroundColor: "#4E567E",
+                            color: "white",
+                            padding: "0.75rem 2rem",
+                            borderRadius: "25px",
+                            textDecoration: "none",
+                            fontWeight: "500",
+                            display: "inline-block",
+                            transition: "background-color 0.3s ease"
+                        },
+                        onMouseEnter: (e)=>{
+                            e.target.style.backgroundColor = "#3a4159";
+                        },
+                        onMouseLeave: (e)=>{
+                            e.target.style.backgroundColor = "#4E567E";
+                        },
+                        children: "Contactar"
+                    }, void 0, false, {
+                        fileName: "src/Components/Blog.jsx",
+                        lineNumber: 158,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Blog.jsx",
+                lineNumber: 147,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Blog.jsx",
+        lineNumber: 42,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Blog;
+exports.default = Blog;
+var _c;
+$RefreshReg$(_c, "Blog");
+
+  $parcel$ReactRefreshHelpers$bbe0.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7GWgX":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8b43 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27532,20 +27820,20 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _propTypes = require("prop-types");
 var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
-var _devdottoSvg = require("../images/socials/devdotto.svg");
-var _devdottoSvgDefault = parcelHelpers.interopDefault(_devdottoSvg);
 var _envelopeSvg = require("../images/socials/envelope.svg");
 var _envelopeSvgDefault = parcelHelpers.interopDefault(_envelopeSvg);
+var _facebookSvg = require("../images/socials/facebook.svg");
+var _facebookSvgDefault = parcelHelpers.interopDefault(_facebookSvg);
 var _githubSvg = require("../images/socials/github.svg");
 var _githubSvgDefault = parcelHelpers.interopDefault(_githubSvg);
-var _instagramSvg = require("../images/socials/instagram.svg");
-var _instagramSvgDefault = parcelHelpers.interopDefault(_instagramSvg);
 var _linkedinSvg = require("../images/socials/linkedin.svg");
 var _linkedinSvgDefault = parcelHelpers.interopDefault(_linkedinSvg);
-var _mediumSvg = require("../images/socials/medium.svg");
-var _mediumSvgDefault = parcelHelpers.interopDefault(_mediumSvg);
-var _twitterSvg = require("../images/socials/twitter.svg");
-var _twitterSvgDefault = parcelHelpers.interopDefault(_twitterSvg);
+var _telegramSvg = require("../images/socials/telegram.svg");
+var _telegramSvgDefault = parcelHelpers.interopDefault(_telegramSvg);
+var _tiktokSvg = require("../images/socials/tiktok.svg");
+var _tiktokSvgDefault = parcelHelpers.interopDefault(_tiktokSvg);
+var _whatsappSvg = require("../images/socials/whatsapp.svg");
+var _whatsappSvgDefault = parcelHelpers.interopDefault(_whatsappSvg);
 var _youtubeSvg = require("../images/socials/youtube.svg");
 var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
 /**
@@ -27554,7 +27842,7 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
  *  HTML hyperlinks: https://www.w3schools.com/html/html_links.asp
  *  Opening links in new tabs: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/
  */ const Footer = (props)=>{
-    const { devDotTo , email , gitHub , instagram , linkedIn , medium , name , primaryColor , twitter , youTube ,  } = props;
+    const { email , facebook , gitHub , linkedIn , name , primaryColor , telegram , tiktok , whatsapp , youTube ,  } = props;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         id: "footer",
         style: {
@@ -27571,68 +27859,51 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                 style: {
                     display: "flex",
                     justifyContent: "center",
-                    gap: "2.5rem"
+                    gap: "2rem",
+                    flexWrap: "wrap",
+                    maxWidth: "800px",
+                    margin: "0 auto"
                 },
                 children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        style: {
+                            color: "white",
+                            textAlign: "center",
+                            marginBottom: "2rem",
+                            fontSize: "1.5rem",
+                            fontWeight: "300"
+                        },
+                        children: "\xa1Conectemos! \uD83D\uDE80"
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 66,
+                        columnNumber: 9
+                    }, undefined),
                     email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                         href: `mailto:${email}`,
+                        title: "Enviar email",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: (0, _envelopeSvgDefault.default),
-                            alt: "email",
+                            alt: "Email",
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 65,
+                            lineNumber: 78,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 64,
+                        lineNumber: 77,
                         columnNumber: 11
                     }, undefined),
-                    devDotTo && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: `https://dev.to/${devDotTo}`,
+                    whatsapp && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `https://wa.me/${whatsapp}`,
                         target: "_blank",
                         rel: "noopener noreferrer",
+                        title: "WhatsApp",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _devdottoSvgDefault.default),
-                            alt: "Dev.to",
-                            className: "socialIcon"
-                        }, void 0, false, {
-                            fileName: "src/Components/Footer.jsx",
-                            lineNumber: 70,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Footer.jsx",
-                        lineNumber: 69,
-                        columnNumber: 11
-                    }, undefined),
-                    gitHub && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: `https://github.com/${gitHub}`,
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _githubSvgDefault.default),
-                            alt: "GitHub",
-                            className: "socialIcon"
-                        }, void 0, false, {
-                            fileName: "src/Components/Footer.jsx",
-                            lineNumber: 75,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Footer.jsx",
-                        lineNumber: 74,
-                        columnNumber: 11
-                    }, undefined),
-                    instagram && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: `https://www.instagram.com/${instagram}`,
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _instagramSvgDefault.default),
-                            alt: "Instagram",
+                            src: (0, _whatsappSvgDefault.default),
+                            alt: "WhatsApp",
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
@@ -27641,71 +27912,74 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 79,
+                        lineNumber: 83,
+                        columnNumber: 11
+                    }, undefined),
+                    telegram && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `https://t.me/${telegram}`,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        title: "Telegram",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _telegramSvgDefault.default),
+                            alt: "Telegram",
+                            className: "socialIcon"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.jsx",
+                            lineNumber: 90,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 89,
+                        columnNumber: 11
+                    }, undefined),
+                    gitHub && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `https://github.com/${gitHub}`,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        title: "GitHub",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _githubSvgDefault.default),
+                            alt: "GitHub",
+                            className: "socialIcon"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.jsx",
+                            lineNumber: 96,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 95,
                         columnNumber: 11
                     }, undefined),
                     linkedIn && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                         href: `https://www.linkedin.com/in/${linkedIn}`,
                         target: "_blank",
                         rel: "noopener noreferrer",
+                        title: "LinkedIn",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: (0, _linkedinSvgDefault.default),
                             alt: "LinkedIn",
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 93,
+                            lineNumber: 107,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 88,
+                        lineNumber: 101,
                         columnNumber: 11
                     }, undefined),
-                    medium && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: `https://medium.com/@${medium}`,
+                    tiktok && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `https://www.tiktok.com/@${tiktok}`,
                         target: "_blank",
                         rel: "noopener noreferrer",
+                        title: "TikTok",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _mediumSvgDefault.default),
-                            alt: "Medium",
-                            className: "socialIcon"
-                        }, void 0, false, {
-                            fileName: "src/Components/Footer.jsx",
-                            lineNumber: 98,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Footer.jsx",
-                        lineNumber: 97,
-                        columnNumber: 11
-                    }, undefined),
-                    twitter && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: `https://twitter.com/${twitter}`,
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _twitterSvgDefault.default),
-                            alt: "Twitter",
-                            className: "socialIcon"
-                        }, void 0, false, {
-                            fileName: "src/Components/Footer.jsx",
-                            lineNumber: 103,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Footer.jsx",
-                        lineNumber: 102,
-                        columnNumber: 11
-                    }, undefined),
-                    youTube && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        //href={`https://www.youtube.com/@${youTube}`}
-                        href: `https://www.youtube.com/@${youTube}`,
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _youtubeSvgDefault.default),
-                            alt: "YouTube",
+                            src: (0, _tiktokSvgDefault.default),
+                            alt: "TikTok",
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
@@ -27714,7 +27988,45 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 107,
+                        lineNumber: 112,
+                        columnNumber: 11
+                    }, undefined),
+                    youTube && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `https://www.youtube.com/@${youTube}`,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        title: "YouTube",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _youtubeSvgDefault.default),
+                            alt: "YouTube",
+                            className: "socialIcon"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.jsx",
+                            lineNumber: 124,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 118,
+                        columnNumber: 11
+                    }, undefined),
+                    facebook && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `https://web.facebook.com/${facebook}`,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        title: "Facebook",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _facebookSvgDefault.default),
+                            alt: "Facebook",
+                            className: "socialIcon"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.jsx",
+                            lineNumber: 135,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 129,
                         columnNumber: 11
                     }, undefined)
                 ]
@@ -27726,16 +28038,19 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 className: "small",
                 style: {
-                    marginTop: 0,
-                    color: "white"
+                    marginTop: "2rem",
+                    color: "rgba(255, 255, 255, 0.8)",
+                    textAlign: "center",
+                    fontSize: "0.9rem"
                 },
                 children: [
-                    "Created by ",
-                    name
+                    "Desarrollado con ❤️ por ",
+                    name,
+                    " | \xa9 2024"
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Footer.jsx",
-                lineNumber: 117,
+                lineNumber: 139,
                 columnNumber: 7
             }, undefined)
         ]
@@ -27750,15 +28065,15 @@ Footer.defaultProps = {
     name: ""
 };
 Footer.propTypes = {
-    devDotTo: (0, _propTypesDefault.default).string,
     email: (0, _propTypesDefault.default).string,
+    facebook: (0, _propTypesDefault.default).string,
     gitHub: (0, _propTypesDefault.default).string,
-    instagram: (0, _propTypesDefault.default).string,
     linkedIn: (0, _propTypesDefault.default).string,
-    medium: (0, _propTypesDefault.default).string,
     name: (0, _propTypesDefault.default).string.isRequired,
     primaryColor: (0, _propTypesDefault.default).string,
-    twitter: (0, _propTypesDefault.default).string,
+    telegram: (0, _propTypesDefault.default).string,
+    tiktok: (0, _propTypesDefault.default).string,
+    whatsapp: (0, _propTypesDefault.default).string,
     youTube: (0, _propTypesDefault.default).string
 };
 exports.default = Footer;
@@ -27770,7 +28085,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","../images/socials/devdotto.svg":"69cpV","../images/socials/envelope.svg":"92UhI","../images/socials/github.svg":"vP2m6","../images/socials/instagram.svg":"jH0VA","../images/socials/linkedin.svg":"5XSmz","../images/socials/medium.svg":"cDDa0","../images/socials/twitter.svg":"flM6L","../images/socials/youtube.svg":"hmN7D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7wKI2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","../images/socials/envelope.svg":"92UhI","../images/socials/github.svg":"vP2m6","../images/socials/linkedin.svg":"5XSmz","../images/socials/tiktok.svg":"eFje2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/socials/telegram.svg":"eKN4P","../images/socials/whatsapp.svg":"f7rnw","../images/socials/youtube.svg":"hmN7D","../images/socials/facebook.svg":"dZs3v"}],"7wKI2":[function(require,module,exports) {
 var ReactIs = require("react-is");
 // By explicitly using `prop-types` you are opting into new development behavior.
 // http://fb.me/prop-types-in-prod
@@ -28511,29 +28826,29 @@ printWarning = function(text) {
 };
 module.exports = checkPropTypes;
 
-},{"./lib/ReactPropTypesSecret":"jZTZJ","./lib/has":"fqKuf"}],"69cpV":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "devdotto.3bb7afaf.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"92UhI":[function(require,module,exports) {
+},{"./lib/ReactPropTypesSecret":"jZTZJ","./lib/has":"fqKuf"}],"92UhI":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "envelope.5e5e1d9e.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"vP2m6":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "github.51e0fbb2.svg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"jH0VA":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "instagram.84def2ad.svg" + "?" + Date.now();
-
 },{"./helpers/bundle-url":"lgJ39"}],"5XSmz":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "linkedin.49c2dcdf.svg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"cDDa0":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "medium.6232db8b.svg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"eFje2":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "tiktok.0db14b87.svg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"flM6L":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "twitter.7541cc84.svg" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"eKN4P":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "telegram.ef3cb0a1.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"f7rnw":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "whatsapp.072fd463.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"hmN7D":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "youtube.c3557793.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"dZs3v":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "facebook.cd38011d.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"9Dt2F":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2a62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -28568,7 +28883,7 @@ const Header = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 href: "#home",
-                children: "Home"
+                children: "Inicio"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
                 lineNumber: 24,
@@ -28576,7 +28891,7 @@ const Header = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 href: "#about",
-                children: "About"
+                children: "Sobre M\xed"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
                 lineNumber: 25,
@@ -28584,18 +28899,26 @@ const Header = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 href: "#portfolio",
-                children: "Portfolio"
+                children: "Proyectos"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
                 lineNumber: 26,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#footer",
-                children: "Contact"
+                href: "#blog",
+                children: "Blog"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
                 lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#footer",
+                children: "Contacto"
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 28,
                 columnNumber: 7
             }, undefined)
         ]
@@ -28749,30 +29072,37 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _designDeskJpegDefault = parcelHelpers.interopDefault(_designDeskJpeg);
 const imageAltText = "desktop with books and laptop";
 /**
- * Project list
- *
- * An array of objects that will be used to display for your project
- * links section. Below is a sample, update to reflect links you'd like to highlight.
+ * Lista de proyectos reales basados en tu experiencia y repositorios de GitHub
  */ const projectList = [
     {
-        title: "10 Things To Know About Azure Static Web Apps \uD83C\uDF89",
-        description: "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-        url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+        title: "AvisOnline - Plataforma de Avisos \uD83D\uDCE2",
+        description: "Plataforma web completa para avisos clasificados (trabajo, ventas, servicios) desarrollada con Angular (Frontend), Laravel + PHP (Backend) y MySQL (Base de Datos). Sistema completo de gesti\xf3n de anuncios con categor\xedas, b\xfasqueda avanzada y panel de administraci\xf3n.",
+        url: "https://www.avisonline.store/"
     },
     {
-        title: "Web Development for Beginners",
-        description: "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-        url: "https://github.com/microsoft/web-dev-for-beginners"
+        title: "SumaranDevs - Portfolio Personal \uD83D\uDE80",
+        description: "Sitio web personal desarrollado con React, mostrando mi experiencia como desarrollador full-stack y mis proyectos destacados.",
+        url: "https://github.com/LuisNol/sumarandevs"
     },
     {
-        title: "My Resume Site",
-        description: "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-        url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+        title: "Gesti\xf3n de Alumnos - Sistema Java \uD83D\uDC68‍\uD83C\uDF93",
+        description: "Sistema de gesti\xf3n estudiantil desarrollado en Java con interfaz gr\xe1fica para administraci\xf3n acad\xe9mica.",
+        url: "https://github.com/LuisNol/Gestion_Alumno"
     },
     {
-        title: "GitHub Codespaces and github.dev",
-        description: "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-        url: "https://www.youtube.com/watch?v=c3hHhRME_XI"
+        title: "Admin Cl\xednica - Sistema M\xe9dico \uD83C\uDFE5",
+        description: "Administrador de cl\xednica para gesti\xf3n de citas m\xe9dicas desarrollado con HTML, CSS y JavaScript.",
+        url: "https://github.com/LuisNol/admin_clinica"
+    },
+    {
+        title: "Estructura de Datos y Algoritmos \uD83D\uDCCA",
+        description: "Proyectos acad\xe9micos implementando estructuras de datos y algoritmos en Java para optimizaci\xf3n de procesos.",
+        url: "https://github.com/LuisNol/2022_1_IS030303B-ESTRUCTURA-DE-DATOS-Y-ALGORITMOS"
+    },
+    {
+        title: "Algoritmos de N\xfameros Primos \uD83D\uDD22",
+        description: "Implementaci\xf3n de diferentes m\xe9todos algor\xedtmicos para la identificaci\xf3n y c\xe1lculo de n\xfameros primos en Java.",
+        url: "https://github.com/LuisNol/MetodosAlgorimoNumeroPrimos"
     }, 
 ];
 const Portfolio = ()=>{
@@ -28784,10 +29114,10 @@ const Portfolio = ()=>{
                 style: {
                     textAlign: "center"
                 },
-                children: "Portfolio"
+                children: "Proyectos Destacados"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 62,
+                lineNumber: 71,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28812,12 +29142,12 @@ const Portfolio = ()=>{
                             alt: imageAltText
                         }, void 0, false, {
                             fileName: "src/Components/Portfolio.jsx",
-                            lineNumber: 65,
+                            lineNumber: 74,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 64,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28836,12 +29166,12 @@ const Portfolio = ()=>{
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 75,
+                                            lineNumber: 84,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 74,
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28849,30 +29179,30 @@ const Portfolio = ()=>{
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 77,
+                                        lineNumber: 86,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, project.title, true, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 73,
+                                lineNumber: 82,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 71,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 63,
+                lineNumber: 72,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 61,
+        lineNumber: 70,
         columnNumber: 5
     }, undefined);
 };
