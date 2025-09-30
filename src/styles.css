@@ -120,8 +120,14 @@ a:hover {
 }
 
 img.socialIcon {
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
+  transition: transform 0.2s ease;
+  filter: brightness(0) invert(1);
+}
+
+img.socialIcon:hover {
+  transform: scale(1.1);
 }
 
 
@@ -184,4 +190,58 @@ img.socialIcon {
   50% {
     transform: translateY(-10px);
   }
+}
+
+/* Estilos adicionales para el blog */
+.blog-card {
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Mejoras de accesibilidad */
+a:focus {
+  outline: 2px solid #4E567E;
+  outline-offset: 2px;
+}
+
+/* Responsive design mejorado */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+  
+  .home-text h1 {
+    font-size: 2rem;
+  }
+  
+  .home-text h2 {
+    font-size: 1.2rem;
+  }
+  
+  section.padding {
+    padding: 3rem 0;
+  }
+}
+
+/* Smooth scroll para mejor UX */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Efectos básicos */
+.box {
+  transition: transform 0.2s ease;
+}
+
+.box:hover {
+  transform: translateY(-2px);
+}
+
+a {
+  transition: color 0.2s ease;
 }

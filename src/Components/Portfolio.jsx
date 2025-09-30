@@ -24,42 +24,51 @@ import image from "../images/design-desk.jpeg";
 const imageAltText = "desktop with books and laptop";
 
 /**
- * Project list
- *
- * An array of objects that will be used to display for your project
- * links section. Below is a sample, update to reflect links you'd like to highlight.
+ * Lista de proyectos reales basados en tu experiencia y repositorios de GitHub
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "AvisOnline - Plataforma de Avisos 📢",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Plataforma web completa para avisos clasificados (trabajo, ventas, servicios) desarrollada con Angular (Frontend), Laravel + PHP (Backend) y MySQL (Base de Datos). Sistema completo de gestión de anuncios con categorías, búsqueda avanzada y panel de administración.",
+    url: "https://www.avisonline.store/",
   },
   {
-    title: "Web Development for Beginners",
+    title: "SumaranDevs - Portfolio Personal 🚀",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Sitio web personal desarrollado con React, mostrando mi experiencia como desarrollador full-stack y mis proyectos destacados.",
+    url: "https://github.com/LuisNol/sumarandevs",
   },
   {
-    title: "My Resume Site",
+    title: "Gestión de Alumnos - Sistema Java 👨‍🎓",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Sistema de gestión estudiantil desarrollado en Java con interfaz gráfica para administración académica.",
+    url: "https://github.com/LuisNol/Gestion_Alumno",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Admin Clínica - Sistema Médico 🏥",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Administrador de clínica para gestión de citas médicas desarrollado con HTML, CSS y JavaScript.",
+    url: "https://github.com/LuisNol/admin_clinica",
+  },
+  {
+    title: "Estructura de Datos y Algoritmos 📊",
+    description:
+      "Proyectos académicos implementando estructuras de datos y algoritmos en Java para optimización de procesos.",
+    url: "https://github.com/LuisNol/2022_1_IS030303B-ESTRUCTURA-DE-DATOS-Y-ALGORITMOS",
+  },
+  {
+    title: "Algoritmos de Números Primos 🔢",
+    description:
+      "Implementación de diferentes métodos algorítmicos para la identificación y cálculo de números primos en Java.",
+    url: "https://github.com/LuisNol/MetodosAlgorimoNumeroPrimos",
   },
 ];
 
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
+      <h2 style={{ textAlign: "center" }}>Proyectos Destacados</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img

@@ -21,31 +21,34 @@ import image from "../images/motion-background.jpg";
 const imageAltText = "purple and blue abstract background";
 
 /**
- * Sort description that expands on your title on the Home component.
+ * Professional description that expands on your title on the Home component.
  */
 const description =
-  "I am a student of Computer and Systems Engineering at the National Agrarian University of La Selva. Focused on Software Development | Cloud and DevOps ☁️ 🔧 Optimization of systems and networks 📊 Innovation in data and technology 💡 Teamwork | Continuous learning";
+  "Desarrollador Full Stack especializado en tecnologías modernas con experiencia en desarrollo web, Cloud Computing y DevOps. Estudiante de Ingeniería de Sistemas e Informática en la Universidad Nacional Agraria de La Selva. Apasionado por la innovación tecnológica y el aprendizaje continuo.";
 
 /**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
+ * Lista de tecnologías y habilidades técnicas basadas en tu experiencia real
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "Laravel & PHP",
+  "Angular & TypeScript",
+  "React & Vue.js",
+  "Node.js & Express",
+  "MySQL & SQLite",
+  "Docker & DevOps",
+  "AWS & Cloud Computing",
+  "Git & GitHub",
+  "JavaScript & ES6+",
+  "HTML5 & CSS3",
+  "RESTful APIs",
+  "Microservicios",
 ];
 
 /**
- * Use this to give more information about what you are passionate about,
- * how you best work, or even a quote. This will help someone learn more
- * about you on a professional level.
+ * Información adicional sobre tu enfoque profesional y pasiones
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "Me apasiona resolver problemas complejos utilizando las mejores prácticas de desarrollo y arquitecturas escalables. Especializado en crear aplicaciones full-stack robustas, optimización de sistemas y automatización de procesos. Siempre busco aprender nuevas tecnologías y compartir conocimiento a través de contenido educativo en YouTube.";
 
 const About = () => {
   return (
@@ -60,7 +63,7 @@ const About = () => {
           textAlign: "center",
         }}
       >
-        <h2>About Myself</h2>
+        <h2>Sobre Mí</h2>
         <p className="large">{description}</p>
         <hr />
         <ul

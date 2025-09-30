@@ -10,15 +10,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import devDotToIcon from "../images/socials/devdotto.svg";
 import envelopeIcon from "../images/socials/envelope.svg";
+import facebookIcon from "../images/socials/facebook.svg";
 import gitHubIcon from "../images/socials/github.svg";
-import instagramIcon from "../images/socials/instagram.svg";
 import linkedInIcon from "../images/socials/linkedin.svg";
-import mediumIcon from "../images/socials/medium.svg";
-import twitterIcon from "../images/socials/twitter.svg";
-import youTubeIcon from "../images/socials/youtube.svg";
+import telegramIcon from "../images/socials/telegram.svg";
 import tiktokIcon from "../images/socials/tiktok.svg";
+import whatsappIcon from "../images/socials/whatsapp.svg";
+import youTubeIcon from "../images/socials/youtube.svg";
 
 /**
  * 💡 Learning resources
@@ -29,16 +28,15 @@ import tiktokIcon from "../images/socials/tiktok.svg";
 
 const Footer = (props) => {
   const {
-    devDotTo,
     email,
+    facebook,
     gitHub,
-    instagram,
     linkedIn,
-    medium,
     name,
     primaryColor,
-    twitter,
+    telegram,
     tiktok,
+    whatsapp,
     youTube,
   } = props;
 
@@ -59,71 +57,92 @@ const Footer = (props) => {
         style={{
           display: "flex",
           justifyContent: "center",
-          gap: "2.5rem",
+          gap: "2rem",
+          flexWrap: "wrap",
+          maxWidth: "800px",
+          margin: "0 auto",
         }}
       >
+        <h3 style={{ 
+          color: "white", 
+          textAlign: "center", 
+          marginBottom: "2rem",
+          fontSize: "1.5rem",
+          fontWeight: "300"
+        }}>
+          ¡Conectemos! 🚀
+        </h3>
+        
         {email && (
-          <a href={`mailto:${email}`}>
-            <img src={envelopeIcon} alt="email" className="socialIcon" />
+          <a href={`mailto:${email}`} title="Enviar email">
+            <img src={envelopeIcon} alt="Email" className="socialIcon" />
           </a>
         )}
-        {devDotTo && (
-          <a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer">
-            <img src={devDotToIcon} alt="Dev.to" className="socialIcon" />
+        
+        {whatsapp && (
+          <a href={`https://wa.me/${whatsapp}`} target="_blank" rel="noopener noreferrer" title="WhatsApp">
+            <img src={whatsappIcon} alt="WhatsApp" className="socialIcon" />
           </a>
         )}
+        
+        {telegram && (
+          <a href={`https://t.me/${telegram}`} target="_blank" rel="noopener noreferrer" title="Telegram">
+            <img src={telegramIcon} alt="Telegram" className="socialIcon" />
+          </a>
+        )}
+        
         {gitHub && (
-          <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
+          <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer" title="GitHub">
             <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
           </a>
         )}
-        {instagram && (
-          <a
-            href={`https://www.instagram.com/${instagram}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={instagramIcon} alt="Instagram" className="socialIcon" />
-          </a>
-        )}
+        
         {linkedIn && (
           <a
             href={`https://www.linkedin.com/in/${linkedIn}`}
             target="_blank"
             rel="noopener noreferrer"
+            title="LinkedIn"
           >
             <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
           </a>
         )}
-        {medium && (
-          <a href={`https://medium.com/@${medium}`} target="_blank" rel="noopener noreferrer">
-            <img src={mediumIcon} alt="Medium" className="socialIcon" />
-          </a>
-        )}
-        {twitter && (
-          <a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener noreferrer">
-            <img src={twitterIcon} alt="Twitter" className="socialIcon" />
-          </a>
-        )}
+        
         {tiktok && (
-          <a href={`https://www.tiktok.com/@${tiktok}`} target="_blank" rel="noopener noreferrer">
+          <a href={`https://www.tiktok.com/@${tiktok}`} target="_blank" rel="noopener noreferrer" title="TikTok">
             <img src={tiktokIcon} alt="TikTok" className="socialIcon" />
           </a>
         )}
-
+        
         {youTube && (
           <a
-            //href={`https://www.youtube.com/@${youTube}`}
             href={`https://www.youtube.com/@${youTube}`}
             target="_blank"
             rel="noopener noreferrer"
+            title="YouTube"
           >
             <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
           </a>
         )}
+        
+        {facebook && (
+          <a
+            href={`https://web.facebook.com/${facebook}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Facebook"
+          >
+            <img src={facebookIcon} alt="Facebook" className="socialIcon" />
+          </a>
+        )}
       </div>
-      <p className="small" style={{ marginTop: 0, color: "white" }}>
-        Created by {name}
+      <p className="small" style={{ 
+        marginTop: "2rem", 
+        color: "rgba(255, 255, 255, 0.8)",
+        textAlign: "center",
+        fontSize: "0.9rem"
+      }}>
+        Desarrollado con ❤️ por {name} | © 2024
       </p>
     </div>
   );
@@ -134,17 +153,16 @@ Footer.defaultProps = {
 };
 
 Footer.propTypes = {
-  devDotTo: PropTypes.string,
   email: PropTypes.string,
+  facebook: PropTypes.string,
   gitHub: PropTypes.string,
-  instagram: PropTypes.string,
   linkedIn: PropTypes.string,
-  medium: PropTypes.string,
   name: PropTypes.string.isRequired,
   primaryColor: PropTypes.string,
-  twitter: PropTypes.string,
-  youTube: PropTypes.string,
+  telegram: PropTypes.string,
   tiktok: PropTypes.string,
+  whatsapp: PropTypes.string,
+  youTube: PropTypes.string,
 };
 
 export default Footer;

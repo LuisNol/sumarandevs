@@ -7,6 +7,7 @@
 import React from "react";
 
 import About from "./Components/About";
+import Blog from "./Components/Blog";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
@@ -24,16 +25,16 @@ import "./styles.css";
  * If you don't have one of the social sites listed, leave it as an empty string.
  */
 const siteProps = {
-  name: "Nolberto Luis Sumaran Pimentel ",
-  title: "Web Designer & Content Creator",
+  name: "Nolberto Luis Sumaran Pimentel",
+  title: "Full Stack Developer | Cloud & DevOps Engineer",
   email: "nolberto.sumaran@gmail.com",
+  whatsapp: "51940078299",
+  telegram: "LuisNol",
   gitHub: "LuisNol",
-  instagram: "luis.sumaran.30",
   linkedIn: "nolberto-luis-sumaran-pimentel-65419a221",
-  medium: "",
-  twitter: "luis.sumaran.30",
+  tiktok: "luisnol30",
   youTube: "nolbertoluissumaranpimente2506",
-  TikTok: "luis.sumaran.30",
+  facebook: "luis.nol.sumaran",
 };
 
 const primaryColor = "#4E567E";
@@ -46,6 +47,7 @@ const App = () => {
       <Home name={siteProps.name} title={siteProps.title} />
       <About />
       <Portfolio />
+      <Blog />
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
     </div>
   );
