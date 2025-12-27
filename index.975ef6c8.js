@@ -27213,7 +27213,7 @@ var _motionBackgroundJpgDefault = parcelHelpers.interopDefault(_motionBackground
 const imageAltText = "purple and blue abstract background";
 /**
  * Professional description that expands on your title on the Home component.
- */ const description = "Desarrollador Full Stack especializado en tecnolog\xedas modernas con experiencia en desarrollo web, Cloud Computing y DevOps. Estudiante de Ingenier\xeda de Sistemas e Inform\xe1tica en la Universidad Nacional Agraria de La Selva. Apasionado por la innovaci\xf3n tecnol\xf3gica y el aprendizaje continuo.";
+ */ const description = "Estudiante de Ingenier\xeda en Inform\xe1tica y Sistemas, con inter\xe9s en la mejora continua, la eficiencia operativa y la toma de decisiones basada en datos. He desarrollado habilidades y conocimientos en desarrollo de software, arquitectura de sistemas, metodolog\xedas \xe1giles y aseguramiento de la calidad, y el uso de herramientas como entornos de desarrollo (IDEs, Git, frameworks como Angular/Laravel), gesti\xf3n de proyectos (Jira, Azure), diagramaci\xf3n (UML, Visio), bases de datos (MySQL), servicios cloud (AWS, Azure, Google Cloud) y software de sistemas de informaci\xf3n geogr\xe1fica. Mi experiencia en proyectos acad\xe9micos y trabajo en equipos multidisciplinarios me ha permitido fortalecer mi comunicaci\xf3n, capacidad anal\xedtica y orientaci\xf3n a resultados.";
 /**
  * Lista de tecnologías y habilidades técnicas basadas en tu experiencia real
  */ const skillsList = [
