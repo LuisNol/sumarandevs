@@ -23,8 +23,8 @@ const imageAltText = "purple and blue abstract background";
 /**
  * Professional description that expands on your title on the Home component.
  */
-const description =
-  "Desarrollador Full Stack especializado en tecnologías modernas con experiencia en desarrollo web, Cloud Computing y DevOps. Estudiante de Ingeniería de Sistemas e Informática en la Universidad Nacional Agraria de La Selva. Apasionado por la innovación tecnológica y el aprendizaje continuo.";
+const description = "Estudiante de Ingeniería en Informática y Sistemas, con interés en la mejora continua, la eficiencia operativa y la toma de decisiones basada en datos. He desarrollado habilidades y conocimientos en desarrollo de software, arquitectura de sistemas, metodologías ágiles y aseguramiento de la calidad, y el uso de herramientas como entornos de desarrollo (IDEs, Git, frameworks como Angular/Laravel), gestión de proyectos (Jira, Azure), diagramación (UML, Visio), bases de datos (MySQL), servicios cloud (AWS, Azure, Google Cloud) y software de sistemas de información geográfica. Mi experiencia en proyectos académicos y trabajo en equipos multidisciplinarios me ha permitido fortalecer mi comunicación, capacidad analítica y orientación a resultados.";
+
 
 /**
  * Lista de tecnologías y habilidades técnicas basadas en tu experiencia real
