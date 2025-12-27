@@ -231,6 +231,36 @@ With your project open in Codespaces:
 
 > 🤩 **Bonus**: [Setup a custom domain for your GitHub pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
+### ⚡ Automatic Azure Deployment (Recommended)
+
+This repository includes an automated GitHub Actions workflow that deploys your site to **Azure Static Web Apps** automatically whenever you push changes to the `main` branch.
+
+#### How it works:
+
+1. **Make changes** to your portfolio code
+2. **Commit and push** to GitHub:
+   ```bash
+   git add .
+   git commit -m "Update my portfolio"
+   git push
+   ```
+3. **GitHub Actions automatically triggers** the Azure deployment workflow
+4. **Your site updates** in Azure within 1-2 minutes
+
+#### Your Azure Static Web App URL:
+- **https://zealous-hill-07cbe411e.azurestaticapps.net**
+
+#### Deployment Status:
+- Go to your GitHub repository → "Actions" tab to see deployment status
+- Check the workflow logs if deployment fails
+
+#### Benefits of Automatic Deployment:
+- ✅ No manual steps needed
+- ✅ Updates instantly with every git push
+- ✅ Free hosting (Azure Static Web Apps is free)
+- ✅ Automatic HTTPS and CDN included
+- ✅ Easy rollback if needed
+
 <br />
 
 ## 🏆 Customizing with Copilot

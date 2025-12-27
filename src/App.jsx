@@ -12,6 +12,7 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Portfolio from "./Components/Portfolio";
+import FloatingWhatsApp from "./Components/FloatingWhatsApp";
 
 import "./styles.css";
 
@@ -49,6 +50,7 @@ const App = () => {
       <Portfolio />
       <Blog />
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
+      <FloatingWhatsApp phoneNumber={siteProps.whatsapp} />
     </div>
   );
 };
