@@ -28085,7 +28085,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","../images/socials/envelope.svg":"92UhI","../images/socials/github.svg":"vP2m6","../images/socials/linkedin.svg":"5XSmz","../images/socials/tiktok.svg":"eFje2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/socials/telegram.svg":"eKN4P","../images/socials/whatsapp.svg":"f7rnw","../images/socials/youtube.svg":"hmN7D","../images/socials/facebook.svg":"dZs3v"}],"7wKI2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","../images/socials/envelope.svg":"92UhI","../images/socials/facebook.svg":"dZs3v","../images/socials/github.svg":"vP2m6","../images/socials/linkedin.svg":"5XSmz","../images/socials/telegram.svg":"eKN4P","../images/socials/tiktok.svg":"eFje2","../images/socials/whatsapp.svg":"f7rnw","../images/socials/youtube.svg":"hmN7D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7wKI2":[function(require,module,exports) {
 var ReactIs = require("react-is");
 // By explicitly using `prop-types` you are opting into new development behavior.
 // http://fb.me/prop-types-in-prod
@@ -28829,26 +28829,26 @@ module.exports = checkPropTypes;
 },{"./lib/ReactPropTypesSecret":"jZTZJ","./lib/has":"fqKuf"}],"92UhI":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "envelope.5e5e1d9e.svg" + "?" + Date.now();
 
+},{"./helpers/bundle-url":"lgJ39"}],"dZs3v":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "facebook.cd38011d.svg" + "?" + Date.now();
+
 },{"./helpers/bundle-url":"lgJ39"}],"vP2m6":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "github.51e0fbb2.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"5XSmz":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "linkedin.49c2dcdf.svg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"eFje2":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "tiktok.0db14b87.svg" + "?" + Date.now();
-
 },{"./helpers/bundle-url":"lgJ39"}],"eKN4P":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "telegram.ef3cb0a1.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"eFje2":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "tiktok.0db14b87.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"f7rnw":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "whatsapp.072fd463.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"hmN7D":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "youtube.c3557793.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"dZs3v":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "facebook.cd38011d.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"9Dt2F":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2a62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
