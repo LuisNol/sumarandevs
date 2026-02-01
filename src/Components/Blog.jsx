@@ -6,6 +6,7 @@
  */
 
 import React from "react";
+import backgroundImage from "../images/Nature-Quote-Wallpaper.jpg";
 
 /**
  * Lista de artículos y contenido técnico
@@ -39,15 +40,26 @@ const blogPosts = [
 
 const Blog = () => {
   return (
-    <section className="padding" id="blog" style={{ backgroundColor: "#f8f9fa" }}>
-      <h2 style={{ textAlign: "center", marginBottom: "3rem" }}>Blog Técnico</h2>
+    <section className="padding" id="blog" style={{ 
+      backgroundColor: "#f8f9fa",
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      paddingBottom: "5rem"
+    }}>
+      <h2 style={{ 
+        textAlign: "center", 
+        marginBottom: "3rem",
+        fontSize: "clamp(1.5rem, 5vw, 2.5rem)"
+      }}>Blog Técnico</h2>
       <div style={{ 
         display: "grid", 
-        gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", 
-        gap: "1.5rem", 
+        gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", 
+        gap: "clamp(1rem, 2vw, 1.5rem)", 
         maxWidth: "1000px", 
         margin: "0 auto",
-        padding: "0 1rem"
+        padding: "0 clamp(0.5rem, 2vw, 1rem)"
       }}>
         {blogPosts.map((post, index) => (
           <article 
@@ -55,7 +67,7 @@ const Blog = () => {
             style={{
               backgroundColor: post.category === "Proyecto Destacado" ? "#f8f9ff" : "white",
               borderRadius: "12px",
-              padding: "2rem",
+              padding: "clamp(1rem, 4vw, 2rem)",
               boxShadow: post.category === "Proyecto Destacado" ? "0 8px 25px rgba(78, 86, 126, 0.15)" : "0 4px 6px rgba(0, 0, 0, 0.1)",
               transition: "transform 0.3s ease, box-shadow 0.3s ease",
               cursor: "pointer",
@@ -97,7 +109,7 @@ const Blog = () => {
             <h3 style={{ 
               marginBottom: "1rem", 
               color: "#333",
-              fontSize: "1.25rem",
+              fontSize: "clamp(1.1rem, 3vw, 1.25rem)",
               lineHeight: "1.4"
             }}>
               {post.title}

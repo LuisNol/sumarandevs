@@ -53,6 +53,26 @@ const Footer = (props) => {
         width: "100vw",
       }}
     >
+      <h2 style={{ 
+        color: "white", 
+        textAlign: "center",
+        fontSize: "2.5rem",
+        fontWeight: "400",
+        marginBottom: "1rem"
+      }}>
+        Contacto
+      </h2>
+      
+      <p style={{
+        color: "rgba(255, 255, 255, 0.9)",
+        textAlign: "center",
+        fontSize: "1.2rem",
+        maxWidth: "600px",
+        marginBottom: "2rem"
+      }}>
+        ¿Tienes un proyecto en mente? ¡Hablemos y hagámoslo realidad!
+      </p>
+      
       <div
         style={{
           display: "flex",
@@ -66,11 +86,12 @@ const Footer = (props) => {
         <h3 style={{ 
           color: "white", 
           textAlign: "center", 
-          marginBottom: "2rem",
-          fontSize: "1.5rem",
+          width: "100%",
+          marginBottom: "1rem",
+          fontSize: "1.3rem",
           fontWeight: "300"
         }}>
-          ¡Conectemos! 🚀
+          Encuéntrame en:
         </h3>
         
         {email && (
